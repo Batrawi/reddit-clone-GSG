@@ -59,3 +59,8 @@ INSERT INTO votes (user_id, post_id, type) VALUES
   (2, 2, FALSE);
 
 COMMIT;
+
+
+
+
+

@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Readex+Pro:wght@200;300;400;500;600;700&family=Yeseva+One&display=swap');
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --gray: #F6F7F8;
+  --background: #DAE0E6;
+  --border: #CCCCCC;
+  --font: #222222;
+  --blue: #0079D3;
+  --main: #FF4500;
+  --icon: #8C8F91;
+}
+
+[data-theme="dark"] {
+  --white: #1A1A1B;
+  --black: #000000;
+  --gray: #272729;
+  --background: #030303;
+  --border: #343536;
+  --font: #D7DADC;
+  --blue: #D7DADC;
+  --main: #FF4500;
+  --icon: #6E7071;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Readex Pro', sans-serif;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-family: 'Readex Pro', sans-serif;
+  font-weight: 300;
+}
+
+body {
+  font-family: 'Readex Pro', sans-serif;
+  width: 100%;
+  height: 100%;
+  background-color: var(--background);
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+}
+
+select {
+  font-family: 'Readex Pro', sans-serif;
+}
+
+a {
+  font-family: 'Readex Pro', sans-serif;
+  color: var(--font);
+  text-decoration: none;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--main);
+}
+
+::selection {
+  background-color: var(--main);
+}
+
+.loading {
+  display: none;
+  font-size: 1.5rem;
+  font-weight: 800;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #000;
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  z-index: 2;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 70px;
+  background-color: var(--white);
+  color: var(--font);
+  padding: 10px 50px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.search {
+  width: 400px;
+  height: 40px;
+  background-color: var(--background);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  display: flex;
+  align-content: center;
+  justify-content: flex-start;
+}
+
+.search i{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+
+.search input{
+  width: 100%;
+  height: 100%;
+  color: var(--font);
+  background-color: var(--background);
+  border-radius: 8px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.user-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 8px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.user-card {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 110%;
+  background-color: var(--white);
+  border: 1px solid var(--border);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.wrap-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.my-posts-btn {
+  margin-top: 10px;
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background-color .2s ease-in-out;
+}
+
+.my-posts-btn:hover {
+  background-color: var(--gray);
+}
+
+.user-card.show {
+  display: block;
+}
+
+.user-img-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 50px;
+  min-height: 50px;
+  background-color: var(--gray);
+  border-radius: 50%;
+}
+
+.arrow-rotate {
+  transform: rotate(180deg);
+}
+
+.btn {
+  border-radius: 150px;
+  padding: 8px 15px;
+}
+
+.login {
+  background-color: var(--white);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+}
+
+.signup {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+.btn:hover {
+  filter: brightness(95%);
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  margin-left: 10px;
+  border-radius: 150px;
+  background-color: var(--background);
+  border: 1px solid var(--border);
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  display: none;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0 0 0 0;
+  border-radius: 150px;
+  background-color: var(--background);
+  transition: 0.4s;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  height: 100%;
+  width: 50%;
+  border-radius: 150px;
+  background-color: var(--main);
+  transition: 0.4s;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(100%);
+}
+
+.logged {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="icon" href="https://www.iconpacks.net/icons/2/free-reddit-logo-icon-2436-thumb.png" type="image/svg+xml" />
+  <!-- css files -->
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="./css/signup&login.css">
+  <link rel="stylesheet" href="./css/home.css">
+  <!-- Font Awesome -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+  <title>Reddit</title>
+</head>
+<body>
+  <div class="wrap-add-post">
+    <div class="wrap-add-post-form">
+      <form id="add-post-form">
+        <div class="form-title">
+          <h2>Add Your Post</h2>
+          <i class="fa-solid fa-xmark close"></i>
+        </div>
+        <p id="error"></p>
+        <div class="input">
+          <label for="title">Title</label>
+          <input type="text" name="title" id="title" placeholder="Title"/>
+        </div>
+        <div class="input">
+          <label for="content">Content</label>
+          <textarea type="text" name="content" id="content" placeholder="Content"></textarea>
+        </div>
+        <button>Add Post</button>
+      </form>
+    </div>
+  </div>
+  <div class="loading">Loading...</div>
+  <header>
+    <div class="container">
+      <a href="/" class="logo"><img src="./assets/logo.svg" alt="logo" /></a>
+      <div class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" placeholder="Search..">
+      </div>
+      <div class="controls">
+        <div class="not-logged">
+          <a href="/public/html/login.html" class="login btn">Log In</a>
+          <a href="/public/html/signup.html" class="signup btn">Sign Up</a>
+        </div>
+        <div class="logged">
+          <a href="#" id="logout" class="login btn">Log Out</a>
+          <a href="#" id="add-post" class="signup btn">Add Post</a>
+        </div>
+        <div class="user-btn">
+          <div class="user-card">
+            <div class="wrap-info">
+              <div class="user-img-card"><i class="fa-regular fa-user"></i></div>
+              <div class="user-info">
+                <span class="username"></span>
+                <span class="email"></span>
+              </div>
+            </div>
+            <div class="my-posts-btn">My Posts</div>
+          </div>
+          <i class="fa-regular fa-user"></i>
+          <span class="user-name"></span>
+          <i class="fa-solid fa-angle-down arrow"></i>
+        </div>
+        <label id="theme-switcher" class="switch">
+          <input id="them-input" type="checkbox" />
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="container">
+      <div class="trending">
+        <div class="card">
+          <img src="https://deadline.com/wp-content/uploads/2022/03/will-smith-slap-e1648510441783.jpg?w=681&h=383&crop=1" alt="">
+          <div class="gradient">
+            <div class="wrap-card">
+              <div class="card-title">Will Smith</div>
+              <div class="card-desc">
+                Will Smith Apologizes To Chris Rock After Slapping Him At The Oscars: “I Was Out Of Line And I Was Wrong”
+              </div>
+              <div class="card-publisher">
+                <img class="publisher-img" src="https://a.thumbs.redditmedia.com/E0Bkwgwe5TkVLflBA7WMe9fMSC7DV2UOeff-UpNJeb0.png" alt="">
+                <p class="publisher-name">r/news</p>
+              </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="card">
+          <img src="https://deadline.com/wp-content/uploads/2022/03/will-smith-slap-e1648510441783.jpg?w=681&h=383&crop=1" alt="">
+          <div class="gradient">
+            <div class="wrap-card">
+              <div class="card-title">Will Smith</div>
+              <div class="card-desc">
+                Will Smith Apologizes To Chris Rock After Slapping Him At The Oscars: “I Was Out Of Line And I Was Wrong”
+              </div>
+              <div class="card-publisher">
+                <img class="publisher-img" src="https://a.thumbs.redditmedia.com/E0Bkwgwe5TkVLflBA7WMe9fMSC7DV2UOeff-UpNJeb0.png" alt="">
+                <p class="publisher-name">r/news</p>
+              </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="card">
+          <img src="https://deadline.com/wp-content/uploads/2022/03/will-smith-slap-e1648510441783.jpg?w=681&h=383&crop=1" alt="">
+          <div class="gradient">
+            <div class="wrap-card">
+              <div class="card-title">Will Smith</div>
+              <div class="card-desc">
+                Will Smith Apologizes To Chris Rock After Slapping Him At The Oscars: “I Was Out Of Line And I Was Wrong”
+              </div>
+              <div class="card-publisher">
+                <img class="publisher-img" src="https://a.thumbs.redditmedia.com/E0Bkwgwe5TkVLflBA7WMe9fMSC7DV2UOeff-UpNJeb0.png" alt="">
+                <p class="publisher-name">r/news</p>
+              </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="card">
+          <img src="https://deadline.com/wp-content/uploads/2022/03/will-smith-slap-e1648510441783.jpg?w=681&h=383&crop=1" alt="">
+          <div class="gradient">
+            <div class="wrap-card">
+              <div class="card-title">Will Smith</div>
+              <div class="card-desc">
+                Will Smith Apologizes To Chris Rock After Slapping Him At The Oscars: “I Was Out Of Line And I Was Wrong”
+              </div>
+              <div class="card-publisher">
+                <img class="publisher-img" src="https://a.thumbs.redditmedia.com/E0Bkwgwe5TkVLflBA7WMe9fMSC7DV2UOeff-UpNJeb0.png" alt="">
+                <p class="publisher-name">r/news</p>
+              </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="main-aside">
+        <main>
+          <nav>
+            <ul>
+              <li><div class="hot"><i class="fa-solid fa-fire"></i> Hot</div></li>
+              <li>
+                <select name="Everywhere" id="everywhere">
+                  <option value="">Everywhere</option>
+                  <option value="">United States</option>
+                  <option value="">Canada</option>
+                  <option value="">Colombia</option>
+                </select>
+              </li>
+              <li><div class="new"><i class="fa-solid fa-certificate"></i> New</div></li>
+              <li><div class="top">Top</div></li>
+            </ul>
+
+          </nav>
+          <section>
+            <div class="posts">
+              <template id="post-template">
+                <div class="wrap-post">
+                  <div class="votes">
+                    <i class="fa-solid fa-up-long"></i>
+                    <p class="vote-count">14</p>
+                    <i class="fa-solid fa-down-long"></i>
+                  </div>
+                  <div class="post">
+                    <div class="post-publisher">
+                      <img class="post-publisher-img" src="https://a.thumbs.redditmedia.com/E0Bkwgwe5TkVLflBA7WMe9fMSC7DV2UOeff-UpNJeb0.png" alt="">
+                      <p class="post-publisher-name">r/news</p>
+                      <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                    <p class="title">Lorem ipsum dolor</p>
+                    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet molestias tempore quaerat facere architecto quam sed eius dolor commodi debitis vel, officia, excepturi nemo, perferendis autem. Quod fugit nobis tempore!</p>
+                    <div class="social-controls">
+                      <div class="comment"><i class="fa-regular fa-message"></i> Comment</div>
+                      <div class="share"><i class="fa-regular fa-share-from-square"></i> Share</div>
+                      <div class="save"><i class="fa-regular fa-bookmark"></i> Save</div>
+                    </div>
+                  </div>
+                </div>
+              </template>
+            </div>
+          </section>
+        </main>
+        <aside>
+          <div class="premium">
+            <div class="premium-text-img">
+              <img class="premium-img" src="images/premium.svg" alt="">
+              <div class="premium-text">
+                <p class="premium-title">Reddit Premium</p>
+                <p class="premium-desc">The best Reddit experience, with monthly Coins</p>
+              </div>
+            </div>
+            <button>Try Now</button>
+          </div>
+          <footer class="footer">
+            <div class="wrap-footer">
+              <ul>
+                <li>Help</li>
+                <li>Reddit Coins</li>
+                <li>Reddit Premium</li>
+                <li>Communities</li>
+                <li>Reddit</li>
+                <li>Topics</li>
+              </ul>
+              
+              <ul>
+                <li>About</li>
+                <li>Careers</li>
+                <li>Press</li>
+                <li>Advertise</li>
+                <li>Blog</li>
+                <li>Terms</li>
+                <li>Content Policy</li>
+                <li>Privacy Policy</li>
+                <li>Mod Policy</li>
+              </ul>
+            </div>
+            <p>Reddit Inc © 2022. All rights reserved</p>
+          </footer>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <section class="wrap-my-posts">
+    <div class="wrap-title-content-posts">
+      <div class="title-my-posts"><i class="fa-solid fa-xmark close-my-posts"></i>My Posts</div>
+        <div class="my-posts">
+          <template id="my-post-template">
+            <div class="wrap-post">
+              <div class="votes">
+                <i class="fa-solid fa-up-long"></i>
+                <p class="vote-count">14</p>
+                <i class="fa-solid fa-down-long"></i>
+              </div>
+              <div class="post">
+                <div class="post-publisher">
+                  <img class="post-publisher-img" src="https://a.thumbs.redditmedia.com/E0Bkwgwe5TkVLflBA7WMe9fMSC7DV2UOeff-UpNJeb0.png" alt="">
+                  <p class="post-publisher-name">r/news</p>
+                  <i class="fa-solid fa-trash-can delete-post"></i>
+                </div>
+                <p class="title">Lorem ipsum dolor</p>
+                <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet molestias tempore quaerat facere architecto quam sed eius dolor commodi debitis vel, officia, excepturi nemo, perferendis autem. Quod fugit nobis tempore!</p>
+                <div class="social-controls">
+                  <div class="comment"><i class="fa-regular fa-message"></i> Comment</div>
+                  <div class="share"><i class="fa-regular fa-share-from-square"></i> Share</div>
+                  <div class="save"><i class="fa-regular fa-bookmark"></i> Save</div>
+                </div>
+              </div>
+            </div>
+          </template>
+        </div>
+    </div>
+  </section>
+
+  <script src="./js/global.js"></script>
+  <script src="./js/getFetch.js"></script>
+  <script src="./js/postFetch.js"></script>
+  <script src="./js/home.js"></script>
+</body>
+</html>

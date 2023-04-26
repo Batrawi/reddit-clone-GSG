@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="icon" href="https://www.iconpacks.net/icons/2/free-reddit-logo-icon-2436-thumb.png" type="image/svg+xml" />
+  <!-- css files -->
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/signup&login.css">
+  <!-- Font Awesome -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+  <title>Log In</title>
+</head>
+<body>
+  <div class="loading">Loading...</div>
+  <header>
+    <div class="container">
+      <a href="/" class="logo"><img src="../assets/logo.svg" alt="logo" /></a>
+      <div class="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" placeholder="Search..">
+      </div>
+      <div class="controls">
+        <a href="/login" class="login btn">Log In</a>
+        <a href="/signup" class="signup btn">Sign Up</a>
+        <div class="user-btn">
+          <i class="fa-regular fa-user"></i>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <label id="theme-switcher" class="switch">
+          <input id="them-input" type="checkbox" />
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+  </header>
+  <main class="wrap-container">
+    <div class="container">
+      <form id="log-in">
+        <h2>Log In</h2>
+        <p id="error"></p>
+        <div class="input">
+          <label for="username">Username</label>
+          <input type="text" name="username" id="username" />
+        </div>
+        <div class="input">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" />
+        </div>
+        <p class="switch-login ">
+          Don't have an account? <a href="/signup">Sign Up</a>
+        </p>
+        <button>Log In</button>
+      </form>
+    </div>
+  </main>
+  <script src="../js/getFetch.js"></script>
+  <script src="../js/global.js"></script>
+  <script src="../js/postFetch.js"></script>
+  <script src="../js/login.js"></script>
+</body>
+</html>
