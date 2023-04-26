@@ -29,10 +29,10 @@ loginForm.addEventListener('submit', (e) => {
 });
 
 // Check Cookie
-const checkCookieLogin = (data) => {
-  if (data.status === 200) window.location.href = '/index.html';
-};
+// const checkCookieLogin = (data) => {
+//   if (data.status === 200) window.location.href = '/index.html';
+// };
 
-window.addEventListener('load', () => {
-  getFetch('/api/v1/cookie', checkCookieLogin)
-});
+// window.addEventListener('load', () => {
+//   getFetch('/api/v1/cookie', checkCookieLogin)
+// });

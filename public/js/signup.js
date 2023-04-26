@@ -31,10 +31,10 @@ signupForm.addEventListener('submit', (e) => {
 
 
 // Check Cookie
-const checkCookieSignup = (data) => {
-  if (data.status === 200) window.location.href = '/index.html';
-};
+// const checkCookieSignup = (data) => {
+//   if (data.status === 200) window.location.href = '/index.html';
+// };
 
-window.addEventListener('load', () => {
-  getFetch('/api/v1/cookie', checkCookieSignup)
-});
+// window.addEventListener('load', () => {
+//   getFetch('/api/v1/cookie', checkCookieSignup)
+// });
